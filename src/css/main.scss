@@ -1,0 +1,67 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    background: #f0f2f5;
+
+    .App{
+        display : flex;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+
+        header{
+            display: flex;
+            background: lightblue;
+            padding: 1rem 0;
+
+            h1{
+                margin: auto;
+                display: flex;
+                color: blue;
+                padding: 0.3rem 1rem;
+                align-items: center;
+            }
+
+            .help{
+                margin: auto 0;
+            }
+
+            .AskHelp{
+                font-weight: bold;
+                text-decoration: none;
+                margin: auto;
+                background: orange;
+                padding: 1rem;
+                color: #fff;
+                border-radius: 12px;
+                box-shadow: 0 0 1rem #fff;
+            }
+
+            .AskHelp:hover{
+                background: orangered;
+                cursor: pointer;
+                box-shadow: 0 0 1rem;
+            }
+        }
+    }
+}
+
+@media (min-width : 950px) {
+    body{
+
+        .App{
+
+            header{
+
+                .AskHelp{
+                    
+                    .help{
+                        size: 5rem;
+                    }
+                }
+            }
+        }
+    }
+}

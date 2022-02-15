@@ -1,0 +1,223 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem 0;
+}
+
+main .SomeText {
+  font-size: 1.2rem;
+  color: #505050;
+  font-weight: bold;
+}
+
+main #refresh {
+  position: fixed;
+  bottom: 8%;
+  left: 85%;
+  -webkit-box-shadow: 0 0 1rem #909;
+          box-shadow: 0 0 1rem #909;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+main .Animate {
+  -webkit-transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+main .AllCasesArea {
+  border-radius: 12px;
+  padding: 1rem;
+  margin: auto;
+  -webkit-box-shadow: 0 0 1rem #909090;
+          box-shadow: 0 0 1rem #909090;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+}
+
+main .AllCasesArea .StateArea {
+  margin-top: 1rem;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .AllCasesArea .StateArea .Matrix {
+  -webkit-box-shadow: 0 0 0.5rem #909;
+          box-shadow: 0 0 0.5rem #909;
+  border-radius: 12px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+
+main .AllCasesArea .StateArea .Matrix p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #707070;
+}
+
+main .AllCasesArea .StateArea .State {
+  cursor: pointer;
+  margin: 0.3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 12px;
+  padding: 0.5rem;
+  background: #fff;
+  -webkit-box-shadow: 0 0 0.5rem #909;
+          box-shadow: 0 0 0.5rem #909;
+  overflow: hidden;
+}
+
+main .AllCasesArea .StateArea .State .DataMatrix {
+  border-radius: 12px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+
+main .AllCasesArea .StateArea .State .DataMatrix p {
+  margin: 0 4px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #707070;
+}
+
+main .AllCasesArea .StateArea .State .DataMatrix .StateName {
+  color: #909;
+  font-size: 1.3rem;
+}
+
+main .AllCasesArea .StateArea .State .DataMatrix .StateData {
+  font-size: 1.3rem;
+  color: blueviolet;
+}
+
+main .AllCasesArea .StateArea .State:hover {
+  cursor: pointer;
+  background: #f0f2f5;
+}
+
+main .AllCasesArea .StateArea .StateDropDown {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .AllCasesArea .StateArea .StateDropDown .someMoreInfo {
+  font-size: 1.2rem;
+  padding: 0.2rem 0.5rem;
+  font-weight: bold;
+  color: #606060;
+}
+
+main .AllCasesArea .StateArea .StateDropDown .moreUsefulInfo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .AllCasesArea .StateArea .StateDropDown .moreUsefulInfo .infoLabel {
+  margin: 12px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #808080;
+}
+
+main .AllCasesArea .StateArea .StateDropDown .moreUsefulInfo a {
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+main .AllCasesArea .StateArea .StateDropDown .moreUsefulInfo .SiteLink {
+  -webkit-box-shadow: 0 0 0.5rem #909090;
+          box-shadow: 0 0 0.5rem #909090;
+  background: blue;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+main .AllCasesArea .StateArea .StateDropDown .moreUsefulInfo .SiteLink:hover {
+  cursor: pointer;
+  background: blueviolet;
+}
+
+main .AllCasesArea .StateArea .StateDropDown .moreUsefulInfo .StateTwitter {
+  font-size: 1rem;
+  -webkit-box-shadow: 0 0 0.5rem #909;
+          box-shadow: 0 0 0.5rem #909;
+  color: #909;
+  padding: 0.1rem;
+}
+
+main .AllCasesArea .StateArea .StateDropDown .moreUsefulInfo .StateTwitter:hover {
+  background: lightblue;
+}
+
+main .AllCasesArea .StateArea .Hide {
+  height: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+main .AllCasesArea .Matrix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (min-width: 750px) {
+  main .AllCasesArea {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=Main.css.map */

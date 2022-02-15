@@ -1,0 +1,72 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f0f2f5;
+}
+
+body .App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .App header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: lightblue;
+  padding: 1rem 0;
+}
+
+body .App header h1 {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: blue;
+  padding: 0.3rem 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .App header .help {
+  margin: auto 0;
+}
+
+body .App header .AskHelp {
+  font-weight: bold;
+  text-decoration: none;
+  margin: auto;
+  background: orange;
+  padding: 1rem;
+  color: #fff;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 0 1rem #fff;
+          box-shadow: 0 0 1rem #fff;
+}
+
+body .App header .AskHelp:hover {
+  background: orangered;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 1rem;
+          box-shadow: 0 0 1rem;
+}
+
+@media (min-width: 950px) {
+  body .App header .AskHelp .help {
+    size: 5rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

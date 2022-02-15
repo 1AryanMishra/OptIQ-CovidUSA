@@ -1,0 +1,46 @@
+.CountryData{
+    display: flex;
+    flex-direction: column;
+
+    .CountryMatrix{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        align-items: center;
+
+        .MatrixLabel{
+            text-align: center;
+            padding: 0.3rem;
+            background: lightgray;
+            color: #909;
+            font-size: 1.4rem;
+            font-weight: bold;
+            box-shadow: 0 0 1rem #909;
+            border-bottom-left-radius: 12px;
+            border-top-left-radius: 12px;
+        }
+
+        .MatrixValue{
+            border-top-right-radius: 12px;
+            border-bottom-right-radius: 12px;
+            box-shadow: 0 0 0.5rem #909 inset;
+            padding: 0.3rem;
+            background: lightgray;
+            color: blueviolet;
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-right: 1rem;
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 650px){
+    .CountryData{
+
+        .CountryMatrix{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+        }
+    }   
+}

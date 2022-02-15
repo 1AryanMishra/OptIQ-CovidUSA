@@ -1,0 +1,58 @@
+.CountryData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.CountryData .CountryMatrix {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.CountryData .CountryMatrix .MatrixLabel {
+  text-align: center;
+  padding: 0.3rem;
+  background: lightgray;
+  color: #909;
+  font-size: 1.4rem;
+  font-weight: bold;
+  -webkit-box-shadow: 0 0 1rem #909;
+          box-shadow: 0 0 1rem #909;
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.CountryData .CountryMatrix .MatrixValue {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  -webkit-box-shadow: 0 0 0.5rem #909 inset;
+          box-shadow: 0 0 0.5rem #909 inset;
+  padding: 0.3rem;
+  background: lightgray;
+  color: blueviolet;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 650px) {
+  .CountryData .CountryMatrix {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
+/*# sourceMappingURL=CountryArea.css.map */
